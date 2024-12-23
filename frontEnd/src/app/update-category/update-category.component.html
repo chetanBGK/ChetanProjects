@@ -1,0 +1,27 @@
+<p class="text-center">Update Createcategory</p>
+
+<form (ngSubmit)="submitCategory()">
+
+      
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Category Name</label>
+        <input type="text" class="form-control" name="categoryTitle"
+        id="categoryTitle" placeholder="Title" [(ngModel)]="category.categoryTitle">
+      </div>
+    
+    
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Description</label>
+        <input type="text" class="form-control" name="categoryDescription"
+        id="categoryDescription" placeholder="Description" [(ngModel)]="category.categoryDescription">
+      </div>
+    
+      <br>
+      <button type="button" class="btn btn-primary" 
+       style="margin: 10px;" routerLink="/category" routerLinkActive="active" (click)="submitCategory()">Submit</button>
+    
+      <button type="button" class="btn btn-primary" 
+      routerLink="/category" routerLinkActive="active" style="margin: 10px;">Back</button>
+
+
+</form>

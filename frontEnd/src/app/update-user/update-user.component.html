@@ -1,0 +1,36 @@
+<h1 class="text-center">Update User</h1>
+
+<form (ngSubmit)="submitUser()">
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">User Name</label>
+    <input type="text" class="form-control" name="name"
+    id="name" placeholder="Name" [(ngModel)]="user.name">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="text" class="form-control" name="email"
+    id="email" placeholder="Email" [(ngModel)]="user.email">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input type="password" class="form-control" name="password"
+    id="password" placeholder="password" [(ngModel)]="user.password">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">About</label>
+    <input type="text" class="form-control" name="about"
+    id="about" placeholder="About" [(ngModel)]="user.about">
+  </div>
+
+  <br>
+  <button type="button" class="btn btn-primary" 
+   style="margin: 10px;" (click)="submitUser()">Submit</button>
+
+  <button type="button" class="btn btn-primary" 
+  routerLink="/users" routerLinkActive="active" style="margin: 10px;">Back</button>
+</form>
+
